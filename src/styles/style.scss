@@ -1,0 +1,311 @@
+@import "marx/scss/marx";
+@import "breakpoint-sass/stylesheets/_breakpoint";
+@import "modular-scale/stylesheets/modular-scale";
+@import "susy/sass/_susy";
+
+$susy: (
+	columns: 1 1.618,
+	gutters: 0.0618,
+	container: 100%,
+	// debug: (
+	//     image: show,
+	//     color: rgba(orange,.1),
+	//     output: background
+	//   )
+);
+
+$susy-desktop: (
+	container: 1020px,
+);
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+$ms-base: 1em;
+$ms-ratio: $golden;
+
+$body-text-color: #333;
+
+body {
+	font-family: "minion-pro";
+	// font-size: 16px;
+
+	font-size: 14px;
+	line-height: 22px; /* 22px / 14px */
+
+	@include breakpoint($bp-tablet) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	@include breakpoint($bp-desktop) {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+blockquote {
+	font-family: "minion-pro";
+	margin: 0em;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+	border-bottom: none;
+	font-family: "din-condensed-web";
+	margin-top: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.primary p:first-of-type {
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: ms(2);
+	line-height: (44px / 36.289px) * 1em;
+	margin-bottom: (8px / 36.289px) * 1em;
+
+	@include breakpoint($bp-tablet) {
+		line-height: ( 48px / 41.4736px) * 1em;
+	}
+}
+
+h2 {
+	font-size: ms(1);
+	line-height: (33px / 22.54px) * 1em;
+	margin-bottom: (10px / 22.54px) * 1em;
+
+	@include breakpoint($bp-tablet) {
+		line-height: (36px / 25.76px) * 1em;
+		margin-bottom: 0em;
+	}
+
+	@include breakpoint($bp-desktop) {
+		margin-bottom: (8px / 28.98px) * 1em;
+	}
+}
+
+h3 {
+	font-size: ms(0);
+	line-height: (22px / 14px) * 1em;
+	margin-bottom: (11px / 14px) * 1em;
+	margin-top: 0em;
+
+	@include breakpoint($bp-tablet) {
+		line-height: (24px / 16px) * 1em;
+		margin-bottom: 0em;
+	}
+
+	@include breakpoint($bp-desktop) {
+		line-height: (26px / 18px) * 1em;
+	}
+}
+
+.container {
+	padding: 0.5em;
+	width: 100%;
+}
+
+.page-wrap {
+	margin: auto;
+	overflow: hidden;
+	max-width: 40em;
+
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include container;
+	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
+		@include container;
+		overflow: visible;
+	}
+}
+
+article {
+	max-width: 40em; /* Sets a readable line length */
+}
+
+p {
+	color: $body-text-color;
+	margin-bottom: (11px / 14px) * 1em;
+	margin-top: 0em;
+}
+
+.primary > p:first-of-type {
+	@include breakpoint($bp-desktop) {
+		font-size: 1.2em;
+
+		&:first-letter {
+			float: left; 
+			font-size: ms(3); 
+			line-height: 0.9em; 
+			padding-right: 0.2em; 
+		}
+	}
+}
+
+.endorsement, .pull-quote {
+	font-family: "minion-pro";
+	font-size: ms(1);
+	max-width: 25em;
+
+	footer {
+		border-top: none;
+	}
+
+	line-height: (33px / 22.54px) * 1em;
+	margin-bottom: (11px / 22.54px) * 1em;
+
+	@include breakpoint($bp-tablet) {
+		line-height: (36px / 25.76px) * 1em;
+		margin-bottom: 0em;
+	}
+
+	@include breakpoint($bp-desktop) {
+		// line-height: ( 43px / 28.98px) * 1em;
+		line-height: (39px / 25.76px) * 1em;
+		margin-top: 0em;
+	}
+}
+
+.endorsement {
+	@include breakpoint($bp-desktop) {
+		margin-top: (13px / 25.76px) * 1em;
+	}
+}
+
+a {
+	color: #7d85c0;
+	text-decoration: none;
+}
+
+#logo, #logo > img {
+	width: 100%;
+}
+
+#header {
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(2);
+		background-color: #EEE;
+		min-height: 20px;
+	}
+}
+
+#info {
+	background-color: #EEE;
+	overflow: hidden;
+
+	#logo {
+		float: left;
+		width: 45%;
+	}
+
+	nav {
+		ul {
+			overflow: hidden;
+			padding-top: 0em;
+			width: 50%;
+			li {
+				clear: left;
+				display: block;
+				float: left;
+				font-size: ms(1);
+				line-height: (33px / 22.54px) * 1em;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		a {
+			color: #7d85c0;
+			padding: 0em;
+		}
+	}
+
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(1);
+		background-color: white;
+		border-right: 1px solid #979797;
+		margin-top: 8em;
+		position: fixed;
+
+		#logo {
+			width: 100%;
+			margin-bottom: -4px;
+		}
+
+		nav {
+			ul {
+				width: 100%;
+				li {
+					text-align: right;
+					line-height: (36px / 25.76px) * 1em;
+				}
+			}
+		}
+	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
+		background-color: white;
+		border: none;
+		margin-top: 12em;
+		overflow: visible;
+		padding: 0px;
+		position: fixed;
+		width: 380.625px;
+
+		#logo {
+			float: left;
+			margin-top: 1em;
+			position: relative;
+			left: -20px;
+			width: 65%;
+		}
+
+		nav {
+			// border: 1px solid green;
+			float: left;
+			// margin-left: 15px;
+			width: 35%;
+			ul {
+				width: 100%;
+				li {
+					line-height: (36px / 25.76px) * 1em;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+article {
+	margin-bottom: 0em;
+}
+
+#content {
+	@include susy-breakpoint($bp-tablet, $susy) {
+		@include span(1 last);
+	}
+
+	@include susy-breakpoint($bp-desktop, $susy-desktop) {
+		@include span(1 last);
+	}
+}
+
+aside {
+	display: none;
+
+	@include breakpoint($bp-desktop) {
+		display: block;
+	}
+}
+
+.pull-quote {
+	background-color: #EEE;
+	float: right;
+	margin-left: -40px;
+	padding-left: 0.5em;
+	position: relative;
+	right: -1.6em;
+	width: 70%;
+}

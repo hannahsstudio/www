@@ -1,0 +1,39 @@
+{
+  "source": "src",
+  "destination": "www",
+  "plugins": {
+  	"metalsmith-sass": {
+    	"outputStyle": "compressed",
+    	"includePaths": ["bower_components/"]
+    },
+    "metalsmith-markdown-remarkable": {
+      "html": true,
+      "typographer": true,
+      "quotes": "«»‘’"
+    },
+    "metalsmith-layouts": {
+    	"engine": "handlebars",
+    	"default": "default-layout.hbs",
+    	"partials": "partials"
+    },
+    "metalsmith-collections": {
+    	"pages": {
+    		"pattern": "content/pages/*.html"
+    	}
+    },
+    "metalsmith-permalinks": {
+    	"pattern": "pages/:menu"
+    },
+    "metalsmith-serve": {
+    	"port": "8080"
+    },
+    "metalsmith-watch": {
+    	"paths": {
+    		"${source}/**/*": true,
+    		"layouts/*": true,
+    		"partials/*": true
+    	},
+    	"live-reload": true
+    }
+  }
+}

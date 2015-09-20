@@ -1,0 +1,23 @@
+{
+  "name": "hannahsstudio.com",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "FilmKnurd <andrew@andrewelster.com>"
+  ],
+  "description": "Static Site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.6.1",
+    "marx": "~1.3.0",
+    "modular-scale": "~2.1.1",
+    "susy": "~2.2.6"
+  }
+}

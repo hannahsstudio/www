@@ -11,10 +11,14 @@
       "typographer": true,
       "quotes": "«»‘’"
     },
+    "metalsmith-metadata": {
+    	"endorsements": "content/endorsements.json"
+    },
     "metalsmith-layouts": {
     	"engine": "handlebars",
     	"default": "default-layout.hbs",
-    	"partials": "partials"
+    	"partials": "partials",
+    	"pattern": "*.html"
     },
     "metalsmith-collections": {
     	"pages": {
@@ -30,8 +34,8 @@
     "metalsmith-watch": {
     	"paths": {
     		"${source}/**/*": true,
-    		"layouts/**/*": "**/*",
-    		"partials/**/*": "**/*"
+    		"layouts/**/*": "src/**/*",
+    		"partials/**/*": "src/**/*"
     	}
     }
   }

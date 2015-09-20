@@ -3,13 +3,17 @@ var Metalsmith 		= require('metalsmith'),
 	layouts 		= require('metalsmith-layouts'),
 	sass 			= require('metalsmith-sass'),
 	collections 	= require('metalsmith-collections'),
-	permalinks 		= require('metalsmith-permalinks');
+	permalinks 		= require('metalsmith-permalinks'),
+	metadata		= require('metalsmith-metadata');
 
 
 Metalsmith(__dirname)
 	.use(sass({
 		outputStyle: 'compressed',
     	includePaths: ['bower_components/']
+	}))
+	.use(metadata({
+		endorsements: "content/endorsements.json"
 	}))
 	.use(markdown({
 		html: true,

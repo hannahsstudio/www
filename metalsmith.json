@@ -30,8 +30,8 @@
     "metalsmith-watch": {
     	"paths": {
     		"${source}/**/*": true,
-    		"layouts/*": "*.md",
-    		"partials/*": "*.md"
+    		"layouts/**/*": "**/*",
+    		"partials/**/*": "**/*"
     	}
     }
   }

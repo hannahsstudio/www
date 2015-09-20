@@ -1,2 +1,5 @@
 # Ignore build output
 www
+
+# Logfiles
+*.log

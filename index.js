@@ -5,7 +5,8 @@ var Metalsmith 		= require('metalsmith'),
 	collections 	= require('metalsmith-collections'),
 	permalinks 		= require('metalsmith-permalinks'),
 	metadata		= require('metalsmith-metadata'),
-	fingerprint		= require('metalsmith-fingerprint');
+	fingerprint		= require('metalsmith-fingerprint'),
+	minify			= require('metalsmith-html-minifier');
 
 
 Metalsmith(__dirname)
@@ -45,5 +46,6 @@ Metalsmith(__dirname)
 		default: 'default-layout.hbs',
 		partials: 'partials'
 	}))
+	.use(minify())
     .destination('./www')
     .build(err => { if (err) console.log(err) });

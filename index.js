@@ -6,7 +6,8 @@ var Metalsmith 		= require('metalsmith'),
 	permalinks 		= require('metalsmith-permalinks'),
 	metadata		= require('metalsmith-metadata'),
 	fingerprint		= require('metalsmith-fingerprint'),
-	minify			= require('metalsmith-html-minifier');
+	minify			= require('metalsmith-html-minifier'),
+	gzip			= require('metalsmith-gzip');
 
 
 Metalsmith(__dirname)
@@ -15,6 +16,10 @@ Metalsmith(__dirname)
 	.use(sass({
 		outputStyle: 'compressed',
     	includePaths: ['bower_components/']
+	}))
+	.use(gzip({
+		src: ['**/*.css'],
+		overwrite: true
 	}))
 	.use(fingerprint({
 		pattern: ['styles/style.css']
@@ -44,7 +49,8 @@ Metalsmith(__dirname)
 	.use(layouts({
 		engine: 'handlebars',
 		default: 'default-layout.hbs',
-		partials: 'partials'
+		partials: 'partials',
+		pattern: '*.html'
 	}))
 	.use(minify())
     .destination('./www')

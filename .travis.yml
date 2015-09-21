@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '4.0'
 install: true
-script: npm build
+script: npm run build
 deploy:
   provider: s3
   skip_cleanup: true

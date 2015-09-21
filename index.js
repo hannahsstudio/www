@@ -15,15 +15,15 @@ Metalsmith(__dirname)
 	.use(metadata({
 		endorsements: "content/endorsements.json"
 	}))
-	.use(markdown({
-		html: true,
-      	typographer: true,
-      	quotes: "«»‘’"
-	}))
 	.use(collections({
 		pages: {
 			pattern: 'content/pages/*.md'
 		}
+	}))
+	.use(markdown({
+		html: true,
+      	typographer: true,
+      	quotes: "«»‘’"
 	}))
 	.use(permalinks({
 		pattern: ':menu'

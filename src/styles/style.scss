@@ -26,6 +26,14 @@ $ms-ratio: $golden;
 
 $body-text-color: #333;
 
+.wf-loading {
+	visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+	visibility: visible;
+}
+
 body {
 	font-family: "minion-pro";
 	// font-size: 16px;

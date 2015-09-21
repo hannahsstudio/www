@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '4.0'
 install: true
+test: true
 deploy:
   provider: s3
   skip_cleanup: true

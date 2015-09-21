@@ -17,12 +17,12 @@ Metalsmith(__dirname)
 		outputStyle: 'compressed',
     	includePaths: ['bower_components/']
 	}))
+	.use(fingerprint({
+		pattern: ['styles/style.css']
+	}))
 	.use(gzip({
 		src: ['**/*.css'],
 		overwrite: true
-	}))
-	.use(fingerprint({
-		pattern: ['styles/style.css']
 	}))
 
 	// Process Metadata

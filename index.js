@@ -50,8 +50,9 @@ Metalsmith(__dirname)
 		engine: 'handlebars',
 		default: 'default-layout.hbs',
 		partials: 'partials',
-		pattern: '*.html'
+		pattern: '**/*.html'
 	}))
+
 	.use(minify())
     .destination('./www')
     .build(err => { if (err) console.log(err) });

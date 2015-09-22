@@ -22,10 +22,6 @@ Metalsmith(__dirname)
 	.use(fingerprint({
 		pattern: ['styles/style.css']
 	}))
-	.use(gzip({
-		src: ['**/*.css'],
-		overwrite: true
-	}))
 
 	// Process Metadata
 	.use(metadata({
@@ -46,15 +42,16 @@ Metalsmith(__dirname)
 	.use(permalinks({
 		pattern: ':menu'
 	}))
-
+	
 	// Process Templates
 	.use(layouts({
 		engine: 'handlebars',
 		default: 'default-layout.hbs',
 		partials: 'partials',
-		pattern: '*.html'
+		pattern: '**/*.html'
 	}))
-	.use(rename([[/\.hbs$/, '.html']]))
+	
+	// .use(rename([[/\.hbs$/, '.html']]))
 
     .destination('.tmp')
 

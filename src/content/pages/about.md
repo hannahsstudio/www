@@ -8,7 +8,11 @@ menu: About
 Welcome to Hannah's Studio. Students interest and abilities vary when entering the studio. With this in mind students will follow a personalized study course. Please take time to read all of the information below so that you gain insight into how Hannah's Studio operates.
 
 ## Teaching Philosophy
-The Studio's philosophy is one based on stimulating the students desire to learn. This is done through a balance of theory, ear training, and creative compositions. We believe that an inspired student will achieve more than an obligated one. 
+The Studio's philosophy is one based on stimulating the students desire to learn. This is done through a balance of theory, ear training, and creative compositions. We believe that students acheive more through inspiration than obligation. 
+
+<aside class="pull-quote">
+	Optimal musical development involves a balance between theory, performance, composition and ear training.
+</aside>
 
 In working with **adult students** we have a faster pace program available that combines theory and ear training to allow adults the ability to play improvisational chord progressions, meaning they can play most popular songs (including religious and Christmas) within a short period of time. 
 

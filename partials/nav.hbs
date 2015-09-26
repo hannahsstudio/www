@@ -1,8 +1,8 @@
 <nav>
   <ul>
-    <li><a href="/www" title="Home">Home</a></li>
+    <li><a href="/" title="Home">Home</a></li>
     {{#each collections.pages}}
-    	<li><a href="{{this.path}}" title="{{this.title}}">{{this.menu}}</a></li>
+    	<li><a href="/{{this.path}}" title="{{this.title}}">{{this.menu}}</a></li>
     {{/each}}
   </ul>
 </nav>

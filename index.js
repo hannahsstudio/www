@@ -20,10 +20,10 @@ Metalsmith(__dirname)
 	.use(fingerprint({
 		pattern: ['styles/style.css']
 	}))
-	.use(gzip({
-		src: ['**/*.css'],
-		overwrite: true
-	}))
+	// .use(gzip({
+	// 	src: ['**/*.css'],
+	// 	overwrite: true
+	// }))
 
 	// Process Metadata
 	.use(metadata({

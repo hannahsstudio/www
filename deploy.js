@@ -3,7 +3,9 @@
 var ghpages = require('gh-pages');
 var path = require('path');
  
-ghpages.publish(path.join(__dirname, 'www'), function(err) { 
+ghpages.publish(path.join(__dirname, 'www'), {
+	repo: 'https://' + process.env.GH_TOKEN + '@github.com/hannahsstudio/www.git'
+},function(err) { 
 	if (err) {
 		console.log(err); 
 		process.exit(1);

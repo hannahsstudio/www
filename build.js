@@ -9,7 +9,6 @@ var Metalsmith 		= require('metalsmith'),
 	metadata		= require('metalsmith-metadata'),
 	fingerprint		= require('metalsmith-fingerprint'),
 	minify			= require('metalsmith-html-minifier'),
-	gzip			= require('metalsmith-gzip'),
 	helpers			= require('metalsmith-register-helpers');
 
 
@@ -23,10 +22,6 @@ Metalsmith(__dirname)
 	.use(fingerprint({
 		pattern: ['styles/style.css']
 	}))
-	// .use(gzip({
-	// 	src: ['**/*.css'],
-	// 	overwrite: true
-	// }))
 
 	// Process Metadata
 	.use(metadata({

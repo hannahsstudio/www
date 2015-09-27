@@ -9,7 +9,6 @@ var Metalsmith 		= require('metalsmith'),
 	metadata		= require('metalsmith-metadata'),
 	fingerprint		= require('metalsmith-fingerprint'),
 	minify			= require('metalsmith-html-minifier'),
-	gzip			= require('metalsmith-gzip'),
 	browserSync 	= require('metalsmith-browser-sync'),
 	rename			= require('metalsmith-rename'),
 	helpers			= require('metalsmith-register-helpers');

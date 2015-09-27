@@ -7,7 +7,5 @@ node_js:
 install:
 - npm rebuild node-sass 
 script: npm run build
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: 'deploy.js'
+after_success:
+  - npm run deploy

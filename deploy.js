@@ -4,7 +4,10 @@ var ghpages = require('gh-pages');
 var path = require('path');
  
 ghpages.publish(path.join(__dirname, 'www'), {
-	repo: 'https://' + process.env.GH_TOKEN + '@github.com/hannahsstudio/www'
+	repo: 'https://' + process.env.GH_TOKEN + '@github.com/hannahsstudio/www',
+	logger: function(message) {
+	    console.log(message);
+	  }
 },function(err) { 
 	if (err) {
 		console.log(err); 

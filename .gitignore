@@ -1,6 +1,7 @@
 # Ignore build output
 www
 .tmp
+node_modules/gh-pages/.cache
 
 # Logfiles
 *.log

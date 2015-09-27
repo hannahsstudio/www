@@ -5,6 +5,10 @@ var path = require('path');
  
 ghpages.publish(path.join(__dirname, 'www'), {
 	repo: 'https://' + process.env.GH_TOKEN + '@github.com/hannahsstudio/www',
+	user: {
+	    name: 'Travis-CI',
+	    email: 'travis@hannahsstudio.com'
+	},
 	logger: function(message) {
 	    console.log(message);
 	  }

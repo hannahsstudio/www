@@ -14,6 +14,7 @@ Basic piano covers [note reading, theory, composition, and ear training](/about)
 - **Age**: Adult, Child
 - **Cost**:  30 minute lesson $100 / month, 1 hour lesson $180 / month
 - **Skill**: Beginner, Intermediate
+  
 
 ## Piano &amp; Guitar Combo
 
@@ -22,6 +23,7 @@ This lesson set combines piano and guitar learning into one lesson.  You learn s
 - **Age**: Adult, Child
 - **Cost**:  30 minute lesson $135 / month, 1 hour lesson $200 / month
 - **Skill**: Beginner
+  
 
 ## Play by Ear
 

@@ -5,5 +5,5 @@ install:
 - npm rebuild node-sass 
 script: npm run build
 deploy:
-	skip_cleanup: true
-	script: 'deploy.js'
+  skip_cleanup: true
+  script: 'deploy.js'

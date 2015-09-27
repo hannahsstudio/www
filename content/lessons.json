@@ -1,0 +1,23 @@
+[
+{
+	"title": "Basic Piano",
+	"description": "Basic piano covers note reading, theory, and ear training as well as the basic functionalities of the piano as an instrument (See <a href='/about'>About the Studio</a> for more detailed information)",
+	"age": ["Adult", "Child"],
+	"skill": ["Beginner", "Intermediate"],
+	"cost": [100, 180]
+},
+{
+	"title": "Piano & Guitar Combo",
+	"description": "This lesson set combines piano and guitar learning into one lesson. You learn side by side the two instruments and gain insight into musical application.",
+	"age": ["Adult", "Child"],
+	"skill": ["Beginner"],
+	"cost": [135, 200]
+},
+{
+	"title": "Play By Ear",
+	"description": "If you have ever wanted to play Christmas carols or hymns for church, this course covers basic piano skills and then incorporates chord progression knowledge and some theory to equip you to read (on a basic level) and play familiar songs.",
+	"age": ["Adult"],
+	"skill": ["Beginner", "Intermediate"],
+	"cost": [100, 180]
+}
+]

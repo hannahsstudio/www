@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Metalsmith 		= require('metalsmith'),
 	markdown 		= require('metalsmith-markdown-remarkable'),
 	layouts 		= require('metalsmith-layouts'),
@@ -7,7 +9,8 @@ var Metalsmith 		= require('metalsmith'),
 	metadata		= require('metalsmith-metadata'),
 	fingerprint		= require('metalsmith-fingerprint'),
 	minify			= require('metalsmith-html-minifier'),
-	gzip			= require('metalsmith-gzip');
+	gzip			= require('metalsmith-gzip'),
+	helpers			= require('metalsmith-register-helpers');
 
 
 Metalsmith(__dirname)
@@ -46,6 +49,7 @@ Metalsmith(__dirname)
 	}))
 
 	// Process Templates
+	.use(helpers())
 	.use(layouts({
 		engine: 'handlebars',
 		default: 'default-layout.hbs',

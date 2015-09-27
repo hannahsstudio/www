@@ -1,8 +1,16 @@
 <nav>
   <ul>
     <li><a href="/" title="Home">Home</a></li>
-    {{#each collections.pages}}
-    	<li><a href="/{{this.path}}" title="{{this.title}}">{{this.menu}}</a></li>
+    {{#with this as |page|}}
+    {{#each collections.pages as |item|}}
+    	<li>
+    		{{#if_eq page.menu compare=item.menu}}
+    			<a href="/{{item.path}}" title="{{item.title}}" class="active">{{item.menu}}</a>
+    		{{else}}
+    			<a href="/{{item.path}}" title="{{item.title}}">{{item.menu}}</a>
+    		{{/if_eq}}
+    	</li>
     {{/each}}
+    {{/with}}
   </ul>
 </nav>

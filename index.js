@@ -55,4 +55,9 @@ Metalsmith(__dirname)
 
 	.use(minify())
     .destination('./www')
-    .build(err => { if (err) console.log(err) });
+    .build(err => { 
+    	if (err) {
+    		console.log(err);
+    		process.exit(1);
+    	}
+    });

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node index",
-    "serve": "metalsmith"
+    "serve": "metalsmith",
+    "deploy": "node deploy"
   },
   "author": "Andrew Elster",
   "license": "ISC",

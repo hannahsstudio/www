@@ -206,6 +206,10 @@ a {
 	#logo {
 		float: left;
 		width: 45%;
+
+		span[itemprop="name"] {
+			visibility: hidden;
+		}
 	}
 
 	nav {

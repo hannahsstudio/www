@@ -20,7 +20,7 @@ In a 2000 survey, 73 percent of respondents agree that teens who play an instrum
 Physician and biologist Lewis Thomas studied the undergraduate majors of medical school applicants. He found that 66% of music majors who applied to medical school were admitted, the highest percentage of any group. 44% of biochemistry majors were admitted. As reported in <cite>“The Case for Music in the Schools,” Phi Delta Kappan, February 1994</cite>
 
 ## BENEFITS FOR ADULTS
->“Music making makes the elderly healthier…. There were significant decreases in anxiety, depression, and loneliness following keyboard lessons. These are factors that are critical in coping with stress, stimulating the immune system, and in improved health. Results also show significant increases in human growth hormones following the same group keyboard lessons. (Human growth hormone is implicated in aches and pains.)” <cite>Dr. Frederick Tims, reported in AMC Music News, June 2, 1999</cite>
+>Music making makes the elderly healthier…. There were significant decreases in anxiety, depression, and loneliness following keyboard lessons. These are factors that are critical in coping with stress, stimulating the immune system, and in improved health. Results also show significant increases in human growth hormones following the same group keyboard lessons. (Human growth hormone is implicated in aches and pains.) <cite>Dr. Frederick Tims, reported in AMC Music News, June 2, 1999</cite>
 
 ### Exercises Brain
 >Scientists have found that music involves the left, right, front, and back portions of the brain.<cite>Donald Hodges, “Neuromusical Research.” Handbook of Music Psychology (San Antonio: IMR Press, 1996).</cite>

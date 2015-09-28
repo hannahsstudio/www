@@ -230,7 +230,13 @@ a {
 
 		a {
 			color: #7d85c0;
-			padding: 0em;
+			padding: 0em 0.2em;
+
+			&:hover, &.active {
+				background-color: #EEE;
+				border-bottom: 0.2rem solid #EEE;
+				transition: 0.25 ease;
+			}
 		}
 	}
 

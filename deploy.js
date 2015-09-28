@@ -5,6 +5,7 @@ var path = require('path');
  
 ghpages.publish(path.join(__dirname, 'www'), {
 	repo: 'https://' + process.env.GH_TOKEN + '@github.com/hannahsstudio/www.git',
+	clone: 'tmp',
 	user: {
 	    name: 'Travis-CI',
 	    email: 'travis@hannahsstudio.com'

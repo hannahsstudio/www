@@ -39,7 +39,6 @@ Metalsmith(__dirname)
 	.use(markdown({
 		html: true,
       	typographer: true,
-      	quotes: "«»‘’"
 	}))
 	.use(permalinks({
 		pattern: ':menu'

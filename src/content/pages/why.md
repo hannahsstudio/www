@@ -17,7 +17,7 @@ In a 2000 survey, 73 percent of respondents agree that teens who play an instrum
 >Music students demonstrate less test anxiety and performance anxiety than students who do not study music.<cite>“College-Age Musicians Emotionally Healthier than Non-Musician Counterparts,” Houston Chronicle, 1998.</cite>
 
 ### Most Medical Students are Musicians
-Physician and biologist Lewis Thomas studied the undergraduate majors of medical school applicants. He found that 66% of music majors who applied to medical school were admitted, the highest percentage of any group. 44% of biochemistry majors were admitted. As reported in <cite>“The Case for Music in the Schools,” Phi Delta Kappan, February 1994</cite>
+Physician and biologist Lewis Thomas studied the undergraduate majors of medical school applicants. He found that 66% of music majors who applied to medical school were admitted, the highest percentage of any group. 44% of biochemistry majors were admitted. As reported in “The Case for Music in the Schools,” Phi Delta Kappan, February 1994.
 
 ## BENEFITS FOR ADULTS
 >Music making makes the elderly healthier…. There were significant decreases in anxiety, depression, and loneliness following keyboard lessons. These are factors that are critical in coping with stress, stimulating the immune system, and in improved health. Results also show significant increases in human growth hormones following the same group keyboard lessons. (Human growth hormone is implicated in aches and pains.) <cite>Dr. Frederick Tims, reported in AMC Music News, June 2, 1999</cite>

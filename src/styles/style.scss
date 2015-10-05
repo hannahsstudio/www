@@ -14,6 +14,10 @@ $susy: (
 	//   )
 );
 
+$susy-tablet: (
+	gutter-position: split
+);
+
 $susy-desktop: (
 	container: 1020px,
 );
@@ -188,23 +192,23 @@ cite {
 }
 
 .endorsement {
-	blockquote {
-		border: none;
-		padding: 0em;
-
-		&::before {
-			color: #EEE;
-			content: '\201C';
-			float: left;
-			font-size: ms(4);
-			margin-left: -0.20em;
-			margin-right: -0.15em;
-			margin-top: 0.25em;
-		}
-	}
-
 	@include breakpoint($bp-desktop) {
 		margin-top: (13px / 25.76px) * 1em;
+
+		blockquote {
+			border: none;
+			padding: 0em;
+
+			&::before {
+				color: #EEE;
+				content: '\201C';
+				float: left;
+				font-size: ms(4);
+				margin-left: -0.20em;
+				margin-right: -0.18em;
+				margin-top: 0.25em;
+			}
+		}
 	}
 }
 
@@ -327,7 +331,7 @@ article {
 }
 
 #content {
-	@include susy-breakpoint($bp-tablet, $susy) {
+	@include susy-breakpoint($bp-tablet, $susy-tablet) {
 		@include span(1 last);
 	}
 

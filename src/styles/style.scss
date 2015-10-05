@@ -270,6 +270,15 @@ a {
 		}
 	}
 
+	span[itemprop="telephone"] {
+		display: block;
+		font-family: "din-condensed-web";
+		font-size: ms(1);
+		padding-right: 0.2em;
+		text-align: right;
+		width: 100%;
+	}
+
 	@include susy-breakpoint($bp-tablet, $susy) {
 		@include span(1);
 		background-color: white;

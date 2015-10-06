@@ -337,6 +337,18 @@ a {
 
 article {
 	margin-bottom: 0em;
+
+	&.primary {
+		margin-bottom: ( 56px / 22px) * 1em;
+
+		@include breakpoint($bp-tablet) {
+			margin-bottom: ( 64px / 24px) * 1em;
+		}
+
+		@include breakpoint($bp-desktop) {
+			margin-bottom: (72px / 26px) * 1em;
+		}
+	}
 }
 
 #content {
@@ -365,4 +377,8 @@ aside {
 	position: relative;
 	right: -1.6em;
 	width: 70%;
+}
+
+#footer {
+	background-color: #BBB;
 }
